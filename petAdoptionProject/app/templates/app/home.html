@@ -1,0 +1,207 @@
+{% extends "app/base.html" %}
+{% load static %} 
+{% block title %} Home {% endblock title %} 
+
+{% block banner_slider %}
+
+<div
+  id="carouselExampleSlideOnly"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center">
+      <img
+        src="{% static 'app/images/banner/banner1.png' %}"
+        style=" width: 100%; height: 700px; "
+        alt="banner"
+      />
+    </div>
+    <div class="carousel-item text-center">
+      <img
+        src="{% static 'app/images/banner/banner2.jpg' %}"
+        style=" width: 100%; height: 700px; "
+        alt="banner"
+      />
+    </div>
+    <div class="carousel-item text-center">
+      <img
+        src="{% static 'app/images/banner/banner3.jpg' %}"
+        style=" width: 100%; height: 700px; "
+        alt="banner"
+      />
+    </div>
+    <div class="carousel-item text-center">
+      <img
+        src="{% static 'app/images/banner/banner4.jpg' %}"
+        style=" width: 100%; height: 700px; "
+        alt="banner"
+      />
+    </div>
+    <div class="carousel-item text-center">
+      <img
+        src="{% static 'app/images/banner/banner5.jpg' %}"
+        style=" width: 100%; height: 700px; "
+        alt="banner"
+      />
+    </div>
+  </div>
+</div>
+
+{% endblock banner_slider %}
+
+{% block information %}
+
+<div class="container">
+  <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+    <h1>Products</h1>
+    <small class="fs-5"
+      >Embark on a journey of love and companionship at AdoptPet,
+      where every adoption story is a masterpiece waiting to be written, where
+      tails wag in anticipation, and where hearts find their forever homes.
+    </small>
+  </div>
+</div>
+
+{% endblock information %} 
+
+
+{% block main-content %} 
+<div class="container">
+  <br>
+    <h2 class="text-center">Our Products</h2>
+    <br>
+    <div class="row container flex align-item-center justify-content-center">
+
+        <div class="col-md-4 col-am-4 im-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesssec buttermilk smbg">
+                <a href="{% url 'category' 'RB' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/rabbit.png' %}" class="img-responsive center-block" alt="" style="width : 100%; height:350px" >
+                        <p class="mlkpro">Rabbits</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-am-4 im-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesssec buttermilk curdbgpro">
+                <a href="{% url 'category' 'BD' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/bird.png' %}" class="img-responsive center-block" alt="" style="width : 100%; height:350px">
+                        <p class="mlkpro">Birds</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 col-am-4 im-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesssec buttermilk buttermilk">
+                <a href="{% url 'category' 'DG' %}">
+                    <div class="goodnessseccont text-center"> 
+                        <img src="{% static 'app/images/dog.png' %}" class="img-responsive center-block" alt="" style="width : 100%; height:350px">
+                        <p class="mlkpro">Dogs</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <br><br>
+
+    <div class="row container flex align-item-center justify-content-center">
+
+        <div class="col-md-4 col-am-4 im-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesssec buttermilk smbg">
+                <a href="{% url 'category' 'CT' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/cat.png' %}" class="img-responsive center-block" alt="" style="width : 100%; height:350px">
+                        <p class="mlkpro">Cats</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-am-4 im-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesssec buttermilk curdbgpro">
+                <a href="{% url 'category' 'HR' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/horse.png' %}" class="img-responsive center-block" alt="" style="width : 100%; height:350px">
+                        <p class="mlkpro">Horses</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 col-am-4 im-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesssec buttermilk buttermilk">
+                <a href="{% url 'category' 'FS' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/fish.png' %}" class="img-responsive center-block" alt="" style="width : 100%; height:350px">
+                        <p class="mlkpro">Fishes</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <br><br>
+
+    <div class="row container flex align-item-center justify-content-center">
+
+        <div class="col-md-4 col-am-4 im-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesssec buttermilk smbg">
+                <a href="{% url 'category' 'TR' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/turtle.png' %}" class="img-responsive center-block" alt="" style="width : 100%; height:350px">
+                        <p class="mlkpro">Turtles</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+{% comment %} 
+        <div class="col-md-4 col-am-4 im-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesssec buttermilk curdbgpro">
+                <a href="{% url 'category' 'DG' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/hamsters.png' %}" class="img-responsive center-block" alt="" style="width : 100%; height:350px">
+                        <p class="mlkpro">hamsters</p>
+                    </div>
+                </a>
+            </div>
+        </div> {% endcomment %}
+
+
+        <div class="col-md-4 col-am-4 im-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+            <div class="goodnesssec buttermilk buttermilk">
+                <a href="{% url 'category' 'SO' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/seaotter.png' %}" class="img-responsive center-block" alt="" style="width : 100%; height:350px">
+                        <p class="mlkpro">Sea Otter</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <br><br>
+</div>
+
+{% endblock main-content %}
